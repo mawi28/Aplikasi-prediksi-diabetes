@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/yellow"
+    android:layout_height="match_parent"
+    tools:context=".SimulasiModel">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bk"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/editPregnancies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Input Pregnancies (0 - 17)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="@color/colar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/clearPregnancies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editPregnancies"
+        app:layout_constraintTop_toTopOf="@id/editPregnancies"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editGlucose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Glucose (0 - 199)"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colar"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editPregnancies"
+        app:layout_constraintStart_toStartOf="@+id/editPregnancies"
+        app:layout_constraintTop_toBottomOf="@+id/editPregnancies"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearGlucose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editGlucose"
+        app:layout_constraintTop_toTopOf="@id/editGlucose"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editBloodPressure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Blood Pressure (1 - 122)"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colar"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editGlucose"
+        app:layout_constraintStart_toStartOf="@+id/editGlucose"
+        app:layout_constraintTop_toBottomOf="@+id/editGlucose"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearBloodPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editBloodPressure"
+        app:layout_constraintTop_toTopOf="@id/editBloodPressure"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editSkinThickness"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Skin Thickness (0 - 99)"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colar"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editBloodPressure"
+        app:layout_constraintStart_toStartOf="@+id/editBloodPressure"
+        app:layout_constraintTop_toBottomOf="@+id/editBloodPressure"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearSkinThickness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editSkinThickness"
+        app:layout_constraintTop_toTopOf="@id/editSkinThickness"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editInsulin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Insulin (0- 846)"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colar"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editSkinThickness"
+        app:layout_constraintStart_toStartOf="@+id/editSkinThickness"
+        app:layout_constraintTop_toBottomOf="@+id/editSkinThickness"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearInsulin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editInsulin"
+        app:layout_constraintTop_toTopOf="@id/editInsulin"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editBMI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input BMI (0 - 67.1)"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colar"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editInsulin"
+        app:layout_constraintStart_toStartOf="@+id/editInsulin"
+        app:layout_constraintTop_toBottomOf="@+id/editInsulin"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editBMI"
+        app:layout_constraintTop_toTopOf="@id/editBMI"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editDiabetesPedigreeFunction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Input Diabetes Pedigree Function (0.08 - 2.42)"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/colar"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/editBMI"
+        app:layout_constraintStart_toStartOf="@+id/editBMI"
+        app:layout_constraintTop_toBottomOf="@+id/editBMI" />
+
+    <ImageView
+        android:id="@+id/clearDiabetesPedigreeFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editDiabetesPedigreeFunction"
+        app:layout_constraintTop_toTopOf="@id/editDiabetesPedigreeFunction"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Age (21 - 81)"
+        android:textColorHint="@color/colar"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editDiabetesPedigreeFunction"
+        app:layout_constraintStart_toStartOf="@+id/editDiabetesPedigreeFunction"
+        app:layout_constraintTop_toBottomOf="@+id/editDiabetesPedigreeFunction"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editAge"
+        app:layout_constraintTop_toTopOf="@id/editAge"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/crem"
+        android:fontFamily="@font/baloo"
+        android:text="PREDICT"
+        android:textColor="@color/colar"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/editAge"
+        app:layout_constraintStart_toStartOf="@+id/editAge"
+        app:layout_constraintTop_toBottomOf="@+id/editAge" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/andika_new_basic"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnCheck"
+        app:layout_constraintStart_toStartOf="@+id/btnCheck"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
